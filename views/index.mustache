@@ -19,8 +19,8 @@
        <ul>
        {{#todos}}
        <div class="todos">
-         <button type="submit" formaction="/complete" name="complete">mark complete</button>
-         <li class="todo_item" name="{{.}}">{{.}}</li>
+         <button type="button" name="completed_item" id="5" onClick="markComplete(this)">mark complete</button>
+         <li class="todo_item">{{.}}</li>
        </div>
      {{/todos}}
       </ul>
@@ -36,6 +36,12 @@
        </ul>
       </div>
    </form>
+   <script>
+
+    function markComplete (item) {
+
+    }
+   </script>
  </body>
 
  </html>

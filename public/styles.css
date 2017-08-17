@@ -45,3 +45,7 @@ button[name="complete"]{
 .todo_item {
   margin-left: 10px;
 }
+
+h2 {
+  padding-left: 40px;
+}
