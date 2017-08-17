@@ -23,8 +23,13 @@ const todos = [
   "Pay bills"
 ];
 
+const completes = [
+  "Wash the dog",
+  "Take out the trash"
+]
+
 app.get("/", function (req, res) {
-  res.render('index', { todos: todos });
+  res.render('index', { todos: todos, completes: completes});
 });
 
 app.post("/", function (req, res) {
