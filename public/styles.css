@@ -1,0 +1,47 @@
+body {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+form {
+  background-color: white;
+  width: 70vw;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.add_todo {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  align-self: center;
+  align-items: center;
+}
+
+input[name="todo"]{
+  width: 70%;
+  margin: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.todos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+button[name="complete"]{
+  width: 150px;
+}
+
+.todo_item {
+  margin-left: 10px;
+}

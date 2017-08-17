@@ -11,15 +11,17 @@
  <body>
    <h1>Todo List</h1>
    <form>
-     <div>
+     <div class="add_todo">
        <input type=text name="todo" placeholder="Add a todo..." />
        <input type="submit" value="submit"></button>
      </div>
      <div>
        <ul>
        {{#todos}}
-       <button name="complete"></button>
-       <li>{{.}}</li>
+       <div class="todos">
+         <button name="complete">mark complete</button>
+         <li class="todo_item">{{.}}</li>
+       </div>
      {{/todos}}
       </ul>
       </div>
