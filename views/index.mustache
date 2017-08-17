@@ -19,8 +19,8 @@
        <ul>
        {{#todos}}
        <div class="todos">
-         <button name="complete">mark complete</button>
-         <li class="todo_item">{{.}}</li>
+         <button type="submit" formaction="/complete" name="complete">mark complete</button>
+         <li class="todo_item" name="{{.}}">{{.}}</li>
        </div>
      {{/todos}}
       </ul>
@@ -30,8 +30,7 @@
         <ul>
         {{#completes}}
         <div class="todos">
-          <button name="uncomplete">mark uncomplete</button>
-          <li class="todo_item">{{.}}</li>
+          <li class="todo_item" name="{{.}}">{{.}}</li>
         </div>
       {{/completes}}
        </ul>

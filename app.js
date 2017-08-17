@@ -34,6 +34,14 @@ app.get("/", function (req, res) {
 
 app.post("/", function (req, res) {
   todos.push(req.body.todo);
+  console.log(req.body);
+  res.redirect('/');
+})
+
+app.post("/complete", function (req, res) {
+  completes.push(req.body.todo);
+  console.log(req.body);
+  console.log("you just completed something.")
   res.redirect('/');
 })
 
